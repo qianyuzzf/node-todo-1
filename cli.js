@@ -15,9 +15,9 @@ program
   .action((...args) => {
     const x = args.slice(0, args.length - 2).join(' ')
     api.add(x).then(() => {
-      console.log('hi')
+      console.log('添加成功')
     }, () => {
-      console.log('hello')
+      console.log('添加失败')
     })
   })
 
