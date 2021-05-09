@@ -3,7 +3,6 @@ const program = require('commander')
 const api = require('./index.js')
 const pkg = require('./package.json')
 
-
 program
   .version(pkg.version)
 
@@ -37,3 +36,4 @@ if (process.argv.length === 2) {
 } else {
   program.parse(process.argv)
 }
+
